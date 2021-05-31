@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
 function HeadDown() {
   const classes = useStyles();
   return (
-    <div className={classes.root} id="head-down"> 
+    <div className={classes.root} id="Head-Down"> 
     </div>
   );
 }

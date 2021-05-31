@@ -1,6 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
-import { AppBar, Collapse, IconButton, Toolbar } from "@material-ui/core";
-import SortIcon from "@material-ui/icons/Sort";
+import { Collapse, IconButton } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { useEffect, useState } from "react";
 import { Link as scroll } from 'react-scroll'
@@ -14,28 +13,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Nunito",
   },
 
-  appbar: {
-    background: "none",
-  },
-
-  appbarWrapper: {
-    width: "80%",
-    margin: "0 auto",
-  },
-
-  colorText: {
-    color: "#3CC924",
-  },
-
-  appbarTitle: {
-    flexGrow: "1",
-  },
-
-  icon: {
-    color: "#D0D0D0",
-    fontSize: "2rem",
-  },
-
   container: {
     textAlign: "center",
   },
@@ -45,8 +22,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "3rem",
   },
 
+  colorText: {
+    color: "#3CC924",
+  },
+
   goDown: {
-    color: "#FFFF",
+    color: "#D0D0D0",
     fontSize: "4rem",
   },
 }));
@@ -59,18 +40,6 @@ function Header() {
   }, []);
   return (
     <div className={classes.root}>
-      <AppBar className={classes.appbar} elevation={0}>
-        <Toolbar className={classes.appbarWrapper}>
-          <h1 className={classes.appbarTitle}>
-            {" "}
-            News<span className={classes.colorText}>HUB.</span>
-          </h1>
-          <IconButton>
-            <SortIcon className={classes.icon} />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-
       <Collapse in={checked}  
                 {...(checked ? { timeout: 750 } : {})}
                 collapsedHeight={50}

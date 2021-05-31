@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Header from './Components/Header';
+import Topbar from './Topbar/Topbar';
 import HeadDown from './Components/HeadDown';
 
 const useStyles = makeStyles((theme) => ({
@@ -19,6 +20,7 @@ function App() {
     <CssBaseline />
     <Header />
     <HeadDown />
+    <Topbar />
     </div>
   );
 }
