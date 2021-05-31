@@ -3,6 +3,7 @@ import { AppBar, Collapse, IconButton, Toolbar } from "@material-ui/core";
 import SortIcon from "@material-ui/icons/Sort";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { useEffect, useState } from "react";
+import { Link as scroll } from 'react-scroll'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   colorText: {
-    color: "#5AFF3D",
+    color: "#3CC924",
   },
 
   appbarTitle: {
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   icon: {
-    color: "#D8D8D8",
+    color: "#D0D0D0",
     fontSize: "2rem",
   },
 
@@ -40,12 +41,12 @@ const useStyles = makeStyles((theme) => ({
   },
 
   title: {
-    color: "#D8D8D8",
+    color: "#D0D0D0",
     fontSize: "3rem",
   },
 
   goDown: {
-    color: "#5AFF3D",
+    color: "#FFFF",
     fontSize: "4rem",
   },
 }));
@@ -76,12 +77,14 @@ function Header() {
                 >
         <div className={classes.container}>
           <h1 className={classes.title}>
-            Welcome to <br /> YOUR <br /> NEWS
+            Welcome to <br /> YOUR <br /> News
             <span className={classes.colorText}>HUB.</span>
           </h1>
+          <scroll to="head-down" smooth={true}>
           <IconButton>
             <ExpandMoreIcon className={classes.goDown} />
           </IconButton>
+          </scroll>
         </div>
       </Collapse>
     </div>
