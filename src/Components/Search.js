@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     },
     marginRight: 0,
     right: 0,
-    position: "absolute",
   },
 
   searchIcon: {
@@ -39,9 +38,6 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create("width"),
     [theme.breakpoints.up("sm")]: {
       width: "12ch",
-      "&:focus": {
-        width: "20ch",
-      },
     },
   },
 }));
@@ -51,7 +47,7 @@ export default function Search() {
 
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="static"></AppBar>
         <Toolbar>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -67,7 +63,7 @@ export default function Search() {
             />
           </div>
         </Toolbar>
-      </AppBar>
+      
     </div>
   );
 }

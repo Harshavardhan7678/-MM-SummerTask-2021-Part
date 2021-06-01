@@ -2,7 +2,7 @@ import React from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Icon from "./Icon";
-import Search from "../Search";
+import Search from "./Search";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {

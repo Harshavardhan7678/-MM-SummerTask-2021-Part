@@ -1,0 +1,43 @@
+.SinglePost{
+    flex:9;
+    margin: 50px;
+}
+
+.SinglePostWrapper{
+    padding: 20px;
+    
+}
+
+.SinglePostImg{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.SinglePostTitle{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.SinglePostEdit{
+    float: right;
+}
+
+.SinglePostEdit:first-child{
+    color: teal;
+}
+
+.SinglePostEdit:last-child{
+    color: tomato;
+}
+
+.SinglePostInfo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+
+}

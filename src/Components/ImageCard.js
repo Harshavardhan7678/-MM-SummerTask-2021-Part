@@ -26,6 +26,7 @@ const useStyles = makeStyles(() => ({
   cta: {
     marginTop: 20,
     textTransform: 'initial',
+    color: "#D0D0D0",
   },
 }));
 

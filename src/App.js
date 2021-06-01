@@ -1,27 +1,13 @@
-import { makeStyles } from '@material-ui/core/styles';
-import { CssBaseline } from '@material-ui/core';
-import Header from './Components/Header';
-import Topbar from './Topbar/Topbar';
-import HeadDown from './Components/HeadDown';
-
-const useStyles = makeStyles((theme) => ({
-  root:{
-    minHeight: '100vh',
-    backgroundImage:`url(${process.env.PUBLIC_URL + `/Assets/Background.jpeg` })`,
-    backgroundRepeat:"no-repeat",
-    backgroundSize:"cover",
-  }
-}));
+import Topbar from './Components/Topbar';
+import Home from './Pages/Home/Home'
+import Single from './Pages/Single/Single';
 
 function App() {
-  const classes = useStyles();
   return (
-    <div className={classes.root}> 
-    <CssBaseline />
-    <Header />
-    <HeadDown />
+    <> 
     <Topbar />
-    </div>
+    <Single />
+    </>
   );
 }
 
