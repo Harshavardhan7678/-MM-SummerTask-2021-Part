@@ -13,16 +13,18 @@ import { useBouncyShadowStyles } from '@mui-treasury/styles/shadow/bouncy';
 
 const useStyles = makeStyles(() => ({
   root: {
-    maxWidth: 304,
-    margin: 'auto',
+    maxWidth: 275,
+    margin: 20,
     boxShadow: 'none',
-    borderRadius: 0,
+    borderRadius: 13,
   },
+
   content: {
     padding: 24,
   },
+
   cta: {
-    marginTop: 24,
+    marginTop: 20,
     textTransform: 'initial',
   },
 }));
