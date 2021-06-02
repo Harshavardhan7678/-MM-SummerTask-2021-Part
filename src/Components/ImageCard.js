@@ -10,6 +10,7 @@ import TextInfoContent from '@mui-treasury/components/content/textInfo';
 import { useWideCardMediaStyles } from '@mui-treasury/styles/cardMedia/wide';
 import { useN01TextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/n01';
 import { useBouncyShadowStyles } from '@mui-treasury/styles/shadow/bouncy';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -52,9 +53,11 @@ export const ImageCard = React.memo(function NewsCard() {
             'Kayaks crowd Three Sisters Springs, where people and manatees maintain controversial coexistence.'
           }
         />
+        <Link  to="/Single" style={{ textDecoration: "none", color: "inherit" }}>
         <Button color={'primary'} fullWidth className={styles.cta}>
           Find Out More <ChevronRightRounded />
         </Button>
+        </Link>
       </CardContent>
     </Card>
   );

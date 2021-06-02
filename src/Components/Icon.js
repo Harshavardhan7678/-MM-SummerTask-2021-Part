@@ -13,8 +13,9 @@ import {
   ThemeProvider,
   useMediaQuery,
 } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(() => ({
   list: {
     width: 225,
     paddingLeft: 5,
@@ -26,8 +27,16 @@ const useStyles = makeStyles({
 
   color: {
     color: "#D0D0D0",
-  }
-});
+  },
+
+  cta: {
+    marginTop: 20,
+    textTransform: 'initial',
+    color: "#D0D0D0",
+  },
+
+  
+}));
 
 export default function SwipeableTemporaryDrawer() {
   const classes = useStyles();
@@ -69,14 +78,57 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-          <ListItem >
-            HUB
-          </ListItem>
-    
+        <ListItem>HUB</ListItem>
       </List>
+
       <Divider />
+
       <List>
-        {["HOME", "ABOUT", "CONTACT", "WRITE", "LOG OUT"].map((text, index) => (
+        {[
+          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            HOME
+          </Link>,
+        ].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+
+        {[
+          <Link
+            to="/Write"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            WRITE
+            </Link>,
+        ].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemText primary={text} />
+          </ListItem>
+          
+        ))}
+
+        {[
+          <Link
+            to="/Login"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            LOGIN
+          </Link>,
+        ].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+
+        {[
+          <Link
+            to="/Register"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            REGISTER
+          </Link>,
+        ].map((text, index) => (
           <ListItem button key={text}>
             <ListItemText primary={text} />
           </ListItem>
@@ -89,7 +141,7 @@ export default function SwipeableTemporaryDrawer() {
     <div>
       <React.Fragment key={"right"}>
         <Button onClick={toggleDrawer("right", true)}>
-          <MenuIcon className={classes.color}/>
+          <MenuIcon className={classes.color} />
         </Button>
         <ThemeProvider theme={theme}>
           <SwipeableDrawer

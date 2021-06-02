@@ -1,4 +1,5 @@
 import "./Register.css";
+import { Link } from "react-router-dom";
 
 export default function Register() {
   return (
@@ -25,7 +26,7 @@ export default function Register() {
         />
         <button className="RegisterButton">Register</button>
       </form>
-      <button className="RegisterLoginButton">Login</button>
+      <button className="RegisterLoginButton"><Link to="/Login" style={{ textDecoration: "none", color: "inherit" }}>Login</Link></button>
     </div>
   );
 }
