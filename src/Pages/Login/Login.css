@@ -1,0 +1,64 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://images.pexels.com/photos/6053/man-hands-reading-boy.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .loginTitle {
+    font-size: 60px;
+  }
+  
+  .loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginForm > label {
+    margin: 10px 0;
+  }
+  
+  .loginInput {
+      width: 250px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .loginInput:focus {
+    outline: none;
+  }
+  
+  .loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .loginRegisterButton {
+    width: 125px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    background-color: teal;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+  }

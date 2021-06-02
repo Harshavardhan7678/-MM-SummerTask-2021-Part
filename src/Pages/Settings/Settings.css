@@ -1,12 +1,13 @@
 .settings {
     display: flex;
-    
+    background-image: url('../../Components/Assets/Background.jpeg');
+    height: 100vh;
   }
   
   .settingsWrapper {
     flex: 9;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 55px;
   }
   
   .settingsTitle {
