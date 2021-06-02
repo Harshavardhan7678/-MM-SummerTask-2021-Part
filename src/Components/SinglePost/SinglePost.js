@@ -34,8 +34,8 @@ function SinglePost() {
           </span>
           <span className="SinglePostDate">1 Hour Ago</span>
         </div>
-        <p>
-          loremm The rusty nail stood erect, angled at a 45-degree angle, just
+        <p className="SinglePostDesc">
+          Loremm The rusty nail stood erect, angled at a 45-degree angle, just
           waiting for the perfect barefoot to come along. She had a difficult
           time owning up to her own crazy self. He decided water-skiing on a
           frozen lake wasn’t a good idea. Lucifer was surprised at the amount of
