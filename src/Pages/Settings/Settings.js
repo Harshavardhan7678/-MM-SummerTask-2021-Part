@@ -25,12 +25,12 @@ export default function Settings() {
               className="settingsPPInput"
             />
           </div>
-          <label>Username</label>
-          <input type="text" placeholder="Harsha" name="name" style={{background: "none"}}/>
-          <label>Email</label>
-          <input type="email" placeholder="Harsha@gmail.com" name="email" style={{background: "none"}}/>
-          <label>Password</label>
-          <input type="password" placeholder="Password" name="password" style={{background: "none"}} />
+          <label style={{color:"white"}}>Username</label>
+          <input type="text" placeholder="Update your username..." name="name" style={{background: "none"}}/>
+          <label style={{color:"white"}}>Email</label>
+          <input type="email" placeholder="Update your Email..." name="email" style={{background: "none"}}/>
+          <label style={{color:"white"}}>Password</label>
+          <input type="password" placeholder="Update your password..." name="password" style={{background: "none"}} />
           <button className="settingsSubmitButton" type="submit">
             Update
           </button>
