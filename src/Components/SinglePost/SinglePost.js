@@ -2,7 +2,7 @@ import "./SinglePost.css";
 import EditIcon from "@material-ui/icons/Edit";
 import { IconButton } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 function SinglePost() {
   return (
@@ -20,12 +20,11 @@ function SinglePost() {
               <FavoriteIcon />
             </IconButton>
             <IconButton>
-              <EditIcon/>
+              <EditIcon />
             </IconButton>
             <IconButton>
-              <DeleteIcon/>
+              <DeleteIcon />
             </IconButton>
-
           </div>
         </h1>
         <div className="SinglePostInfo">

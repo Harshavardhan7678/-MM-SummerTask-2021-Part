@@ -1,56 +1,58 @@
-.SinglePost{
-    flex:9;
-    background-image: url('../../Components/Assets/Background.jpeg');
-    height: 100vh;
+.SinglePost {
+  flex: 9;
+  background-image: url("../../Components/Assets//Background.2.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.SinglePostWrapper{
-    padding: 20px;
+.SinglePostWrapper {
+  padding: 20px;
 }
 
-.SinglePostImg{
-    width: 100%;
-    height: 300px;
-    border-radius: 5px;
-    object-fit: cover;
-    margin-top: 55px;
+.SinglePostImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-top: 55px;
 }
 
-.SinglePostTitle{
-    text-align: center;
-    margin: 10px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+.SinglePostTitle {
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.SinglePostEdit{
-    float: right;
+.SinglePostEdit {
+  float: right;
 }
 
-.SinglePostEdit:first-child{
-    color: teal;
+.SinglePostEdit:first-child {
+  color: teal;
 }
 
-.SinglePostEdit:last-child{
-    color: tomato;
+.SinglePostEdit:last-child {
+  color: tomato;
 }
 
-.SinglePostInfo{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    color: #b39656;
+.SinglePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #ffd476;
 }
 
-.SinglePostDesc{
-    color: rgb(139, 139, 139);
-    font-size: 18px;
+.SinglePostDesc {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
 }
 
-.SinglePostDesc::first-letter{
-    margin-left: 20px;
-    font-size: 30px;
-    font-weight: 600;
+.SinglePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
-
