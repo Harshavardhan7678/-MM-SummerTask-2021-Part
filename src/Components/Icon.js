@@ -31,11 +31,9 @@ const useStyles = makeStyles(() => ({
 
   cta: {
     marginTop: 20,
-    textTransform: 'initial',
+    textTransform: "initial",
     color: "#D0D0D0",
   },
-
-  
 }));
 
 export default function SwipeableTemporaryDrawer() {
@@ -100,12 +98,24 @@ export default function SwipeableTemporaryDrawer() {
             style={{ textDecoration: "none", color: "inherit" }}
           >
             WRITE
-            </Link>,
+          </Link>,
         ].map((text, index) => (
           <ListItem button key={text}>
             <ListItemText primary={text} />
           </ListItem>
-          
+        ))}
+
+        {[
+          <Link
+            to="/Settings"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            SETTINGS
+          </Link>,
+        ].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemText primary={text} />
+          </ListItem>
         ))}
 
         {[
