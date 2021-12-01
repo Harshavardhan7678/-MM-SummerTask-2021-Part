@@ -7,7 +7,7 @@ All the blogs go into screening stage where the necessary information from the b
 They are free to have an individual Blog under our separate section all to themselevs if they don't want it to go through our screening stage.
 
 This would eliminate biased reporting as the information wouldn't be comming from one person but from a group of people. 
-Hence, it would also help us have many different views and also more information on any certain topic worth the public attention.
+Hence, it would also help us have many different views and more information on any certain topic worth the public eye.
 
 # Getting Started with Create React App
 
