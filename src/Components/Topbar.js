@@ -34,17 +34,14 @@ function Topbar() {
   const classes = useStyles();
   return (
     <div>
-      
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
-        
           <h1 className={classes.appbarTitle}>
             News<span className={classes.colorText}>HUB.</span>
           </h1>
           <Search />
-          
+
           <Icon />
-            
         </Toolbar>
       </AppBar>
     </div>

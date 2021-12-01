@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Collapse, IconButton } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { useEffect, useState } from "react";
-import { Link as scroll } from 'react-scroll'
+import { Link as scroll } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,25 +34,26 @@ const useStyles = makeStyles((theme) => ({
 
 function Header() {
   const classes = useStyles();
-  const[checked,setChecked] = useState(false);
+  const [checked, setChecked] = useState(false);
   useEffect(() => {
     setChecked(true);
   }, []);
   return (
     <div className={classes.root}>
-      <Collapse in={checked}  
-                {...(checked ? { timeout: 750 } : {})}
-                collapsedHeight={50}
-                >
+      <Collapse
+        in={checked}
+        {...(checked ? { timeout: 750 } : {})}
+        collapsedHeight={50}
+      >
         <div className={classes.container}>
           <h1 className={classes.title}>
             Welcome to <br /> YOUR <br /> News
             <span className={classes.colorText}>HUB.</span>
           </h1>
           <scroll to="head-down" smooth={true}>
-          <IconButton>
-            <ExpandMoreIcon className={classes.goDown} />
-          </IconButton>
+            <IconButton>
+              <ExpandMoreIcon className={classes.goDown} />
+            </IconButton>
           </scroll>
         </div>
       </Collapse>
