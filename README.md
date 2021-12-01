@@ -1,3 +1,11 @@
+# Description
+
+This is NewsHub. As the name itself suggests, it's a platform where you get all the information necessary for your day to day life. In here, people themseleves are the reporters.
+Our platform helps anyone in order to write a Blog or just report anything.
+
+All the blogs go into screening stage where the necessary information from the blog or similar blogs would be added into one and displayed on our website after taking the concern from the author.
+They are free to have an individual Blog under our separate section all to themselevs if they don't want it to go through our screening stage.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
